@@ -57,6 +57,9 @@
 .udemy__sec3 i{
     margin: 5px;
 }
+.udemy__sec4{
+    display: none;
+}
 .image{
     width: 100%;
 }
@@ -95,7 +98,9 @@
     text-transform: capitalize;
 }
 .course-card{
-    width: 300px;
+   flex-grow: 1;
+   flex-basis: 20%;
+   margin:10px;
 }
 .course-card img{
     width: 100%;
@@ -104,8 +109,9 @@
 .recomonded__container{
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin: 20px;
     flex-wrap: wrap;
+    flex-basis: 20;
 
 }
 
@@ -131,8 +137,8 @@
     padding: 10px;
     margin: 10px;
     border: 1px black solid;
-    flex-grow: 1;
-    flex-basis: 25%;
+    flex-grow:1;
+    flex-basis:25%;
     text-align: center;
    
 }
@@ -149,6 +155,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 10px;
+    
 }
 .footer{
     padding: 30px;
@@ -220,4 +227,33 @@
 .mylearning:hover .mylearning__popup{
     display: block;
 }
+/* media queries */
+@media screen and (max-width:800px){
+    body
+    {
+        font-size:10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .course-card{
+        flex-basis: 40%;
+    }
+    
+}
+@media screen and (max-width:800px) {
+    .topic__container p{
+        flex-basis:20%;
+    }
+    .cetagories{
+        display: none;
+    }
+    .udemy__sec2,.udemy__sec3{
+        display: none;
+    }
+    .udemy__sec4{
+        display: block;
+    }
+    
+}
+
 
